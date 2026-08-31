@@ -1,0 +1,9 @@
+# 环境变量与密钥
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

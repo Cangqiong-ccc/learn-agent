@@ -71,7 +71,9 @@ class ReActAgent:
 
         print("已达到最大步数，流程终止。")
         return None
-
+    """
+    解析大语言模型的输出，提取Thought和Action。
+    """
     def _parse_output(self, text: str):
         # Thought: 匹配到 Action: 或文本末尾
         thought_match = re.search(r"Thought:\s*(.*?)(?=\nAction:|$)", text, re.DOTALL)
